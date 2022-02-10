@@ -4,7 +4,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'balsamiq': ['"Balsamiq Sans", cursive']
+      }
+    },
   },
   plugins: [
     require('tailwind-scrollbar')
