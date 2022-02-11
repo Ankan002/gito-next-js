@@ -1,13 +1,8 @@
 name: Hello World Action
 on: [push]
 jobs: 
-    print-hello-world: 
+    build-app: 
         runs-on: ubuntu-latest
         steps:
-          - run: echo "Hello World!!"
-          - run: echo "This works!!"
-    print-hello-world-two: 
-        runs-on: ubuntu-latest
-        steps:
-          - run: echo "Hello World Second!!"
-          - run: echo "This works Second Time!!"
+          - uses: actions/checkout@v2
+          - run: tree
