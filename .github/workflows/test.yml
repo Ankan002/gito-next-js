@@ -6,6 +6,8 @@ jobs:
         steps:
           - uses: actions/checkout@v2
           - uses: actions/setup-node@v2
+          - name: Install node modules
+            run: npm i
           - name: Build the project
             run: npm build
           - name: Setup Finish
