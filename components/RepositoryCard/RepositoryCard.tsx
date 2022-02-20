@@ -42,7 +42,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
       <div className='w-full'>
 
         <a href={html_url}>
-        <h1 className='font-fira-code hover:cursor-pointer hover:underline xl:text-2xl lg:text-xl text-lg   font-semibold text-violet-500 ' >
+        <h1 className='font-fira-code hover:cursor-pointer hover:underline xl:text-2xl lg:text-xl text-lg   font-semibold text-violet-500' >
           {name}
         </h1>
         </a>

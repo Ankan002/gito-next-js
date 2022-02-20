@@ -9,6 +9,8 @@ export const getInitialRepos = async(
         }
     })
 
+    console.log(Response)
+
     return {
         nextLink: Response?.headers?.link?.split(';')[0].substring(1, Response?.headers?.link?.split(';')[0].length - 1),
         data: Response?.data 
