@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
             <img src={icon?.default?.src} className='w-8 h-8 mr-3' />
-            <span className='text-xl text-[#FEE3EC] font-bold uppercase tracking-wide font-balsamiq'>
+            <span className='text-xl text-[#FEE3EC] font-bold uppercase tracking-wide font-m-plus'>
               Gito
             </span>
           </a>

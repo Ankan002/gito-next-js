@@ -56,11 +56,6 @@ const HomeBody = () => {
             ))
         }
         </div>
-        {/* <div className='flex justify-center items-center'>
-            <button className='w-40 h-10 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500   to-pink-500 flex justify-center items-center text-xl font-mono text-[#EDEDED]'>
-                Know More
-            </button>
-        </div> */}
         
     </div>
   )

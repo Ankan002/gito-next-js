@@ -48,7 +48,7 @@ const HomeCard = (props: HomeCardProps) => {
         viewport={{ once: false }}
       >
         <img src={image} className="mt-1 h-2/3 w-full rounded object-contain" />
-        <h3 className="mt-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text font-balsamiq text-lg font-bold text-transparent md:text-xl lg:text-2xl">
+        <h3 className="mt-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text font-m-plus text-lg font-bold text-transparent md:text-xl lg:text-2xl">
           {name}
         </h3>
         <div className="flex items-center justify-center">
@@ -56,7 +56,7 @@ const HomeCard = (props: HomeCardProps) => {
             className="fro mt-2 h-10 w-40 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-[#EDEDED] shadow-[0_15px_30px_10px_rgba(244,114,182,0.3)]"
             onClick={onKnowMoreClick}
           >
-            <h3 className="font-mono text-lg font-bold text-[#FEE3EC] md:text-xl lg:text-2xl">
+            <h3 className="font-m-plus text-lg font-bold text-[#FEE3EC] md:text-xl lg:text-2xl">
               Know More
             </h3>
           </button>

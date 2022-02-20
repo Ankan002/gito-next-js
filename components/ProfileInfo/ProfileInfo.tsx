@@ -32,15 +32,15 @@ const ProfileInfo = (props: ProfileInfoProps) => {
                 <CounterTab count={publicRepos} text='Public Repositories' />
             </div>
             <div>
-                <h1 className='lg:text-xl md:text-lg text-lg font-bold lg:mt-12 md:mt-12 mt-3 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500   to-pink-500 font-balsamiq'>
+                <h1 className='lg:text-xl md:text-lg text-lg font-bold lg:mt-12 md:mt-12 mt-3 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500   to-pink-500 font-m-plus'>
                     {name}
                 </h1>
 
-                <h1 className='lg:text-xl md:text-lg text-lg font-balsamiq font-bold mt-1  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500    to-pink-500'>
+                <h1 className='lg:text-xl md:text-lg text-lg font-m-plus font-bold mt-1  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500    to-pink-500'>
                     {email}
                 </h1>
 
-                <h1 className='lg:text-xl md:text-lg text-lg font-balsamiq font-bold mt-1  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500    to-pink-500'>
+                <h1 className='lg:text-xl md:text-lg text-lg font-m-plus font-bold mt-1  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500    to-pink-500'>
                     {bio}
                 </h1>
             </div>

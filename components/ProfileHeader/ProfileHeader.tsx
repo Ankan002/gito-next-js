@@ -20,7 +20,7 @@ const ProfileHeader = (props: ProfileHeaderProps) => {
         <button className='h-full items-center pt-2' onClick={onBackClick}>
             <BiArrowBack  color='#6366f1' size={30} fontWeight="700"/>
         </button>
-        <h1 className='lg:text-2xl md:text-xl text-lg font-balsamiq font-bold mt-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ml-3'>
+        <h1 className='lg:text-2xl md:text-xl text-lg font-m-plus font-bold mt-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ml-3'>
             {username}
         </h1>
     </div>

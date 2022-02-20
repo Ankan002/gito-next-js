@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'balsamiq': ['"Balsamiq Sans", cursive'],
-        'fira-code': ['"Fira Code", monospace']
+        'fira-code': ['"Fira Code", monospace'],
+        'm-plus': ['"M PLUS Rounded 1c", sans-serif']
       }
     },
   },
