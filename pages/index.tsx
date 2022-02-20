@@ -23,8 +23,6 @@ const Home = ({info}: any) => {
     if(info?.data) setAllUsers(info?.data)
   }, [info])
 
-  console.log(info?.data)
-
   return (
     <div className="flex min-h-screen flex-col bg-[#FEE3EC]">
       <CommonHead title='Gito' />

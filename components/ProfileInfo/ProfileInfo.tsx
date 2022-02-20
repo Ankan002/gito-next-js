@@ -22,7 +22,7 @@ const ProfileInfo = (props: ProfileInfoProps) => {
         <div className='lg:w-1/4 md:w-1/4 w-full h-full flex justify-center items-center'>
             <img
              src={image}
-             className='lg:w-3/4 md:w-full w-2/4 object-contain rounded-full' 
+             className='lg:w-3/4 md:w-full w-2/4 object-contain rounded-full shadow-[0_10px_30px_10px_rgba(244,114,182,0.3)]' 
             />
         </div>
         <div className='lg:w-3/4 md:w-3/4 w-full h-full flex flex-col justify-center px-5'>

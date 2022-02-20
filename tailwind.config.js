@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'balsamiq': ['"Balsamiq Sans", cursive']
+        'balsamiq': ['"Balsamiq Sans", cursive'],
+        'fira-code': ['"Fira Code", monospace']
       }
     },
   },

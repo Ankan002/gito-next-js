@@ -5,6 +5,8 @@ import { getProfileInfo } from '../utils/getProfileInfo'
 import ProfileHeader from '../components/ProfileHeader'
 import LoadingComponent from '../components/LoadingComponent'
 import ProfileInfo from '../components/ProfileInfo'
+import ProfileBody from '../components/ProfileBody'
+import { Toaster } from 'react-hot-toast'
 
 // {
 // avatar_url: "https://avatars.githubusercontent.com/u/29?v=4"
@@ -50,7 +52,6 @@ const GitHubProfile = () => {
 
   const profileInfoLoader = async() => {
       const tempInfo = await getProfileInfo(`${name}`, loading, setLoading)
-      console.log(tempInfo)
       setProfileInfo(tempInfo)
   }
 
@@ -60,6 +61,10 @@ const GitHubProfile = () => {
 
   return (
     <div className='min-h-screen w-full bg-[#FEE3EC] flex flex-col'>
+        <Toaster
+            position="top-center"
+            reverseOrder={false}
+        />
         <CommonHead title={(name) ? `${name}` : 'GitHubProfile'} />
         <ProfileHeader username={name} />
         {
@@ -68,18 +73,27 @@ const GitHubProfile = () => {
                     <LoadingComponent />
                 </div>
             ) : (
-                <div className='px-5 w-full'>
-                    <ProfileInfo
-                     image={profileInfo?.info?.avatar_url}
-                     bio={profileInfo?.info?.bio}
-                     followers={profileInfo?.info?.followers} 
-                     following={profileInfo?.info?.following}
-                     publicRepos={profileInfo?.info?.public_repos}
-                     githubUrl={profileInfo?.info?.html_url}
-                     name={profileInfo?.info?.name}
-                     email={profileInfo?.info?.email}
-                    />
+                <div className='w-full flex flex-col flex-grow'>
+                    <div className='px-5 w-full'>
+                        <ProfileInfo
+                         image={profileInfo?.info?.avatar_url}
+                         bio={profileInfo?.info?.bio}
+                         followers={profileInfo?.info?.followers} 
+                         following={profileInfo?.info?.following}
+                         publicRepos={profileInfo?.info?.public_repos}
+                         githubUrl={profileInfo?.info?.html_url}
+                         name={profileInfo?.info?.name}
+                         email={profileInfo?.info?.email}
+                        />
+                    </div>
+                    <div className='w-full px-5 flex flex-col flex-grow mt-3'>
+                        <ProfileBody
+                         login={profileInfo?.info?.login} 
+                         totalRepos={profileInfo?.info?.public_repos} 
+                        />
+                    </div>
                 </div>
+                
             )
         }
         

@@ -24,8 +24,6 @@ export const getMoreUsers = async(
         }
     })
 
-    console.log(Response)
-
     setNextHomeApi(Response?.headers?.link?.split(';')[0].substring(1, Response?.headers?.link?.split(';')[0].length - 1))
 
     setAllUsers([...allUsers].concat(Response?.data))

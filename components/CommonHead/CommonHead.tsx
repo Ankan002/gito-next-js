@@ -12,7 +12,7 @@ const CommonHead = (props: HeadProps) => {
   return (
     <Head>
       <title>{title}</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.svg" />
     </Head>
   )
 };

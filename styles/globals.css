@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -32,6 +33,10 @@ text-primary-gradient{
 
 balsamiq{
   font-family: 'Balsamiq Sans', cursive;
+}
+
+fira-code{
+  font-family: 'Fira Code', monospace;
 }
 
 /* body{
